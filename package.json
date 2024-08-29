@@ -1,12 +1,12 @@
 {
-  "name": "Qҽҽɳ-乙azie-MD",
+  "name": "Queen-Zazie-MD",
   "version": "1.5.0",
   "description": "A WhatsApp Bot Created By NBT💫",
   "main": "index.js",
   "scripts": {
-    "start": "pm2 start index.js --deep-monitoring --attach --name Qҽҽɳ-乙azie-MD",
-    "stop": "pm2 stop Qҽҽɳ-乙azie-MD",
-    "restart": "pm2 restart Qҽҽɳ-乙azie-MD"
+    "start": "pm2 start index.js --deep-monitoring --attach --name Queen-Zazie-MD",
+    "stop": "pm2 stop Qeen-Zazie-MD",
+    "restart": "pm2 restart Queen-Zazie-MD"
   },
   "dependencies": {
     "@whiskeysockets/baileys": "6.6.0",
