@@ -19,7 +19,7 @@ const axios = require('axios')
 const { File } = require('megajs')
 const prefix = '.'
 
-const ownerNumber = ['94760059126']
+const ownerNumber = ['94762659126']
 
 //===================SESSION-AUTH============================
 if (!fs.existsSync(__dirname + '/auth_info_baileys/creds.json')) {
@@ -69,9 +69,9 @@ require("./plugins/" + plugin);
 console.log('Plugins installed successful ✅')
 console.log('Bot connected to whatsapp ✅')
 
-let up = `Queen-Zazie-MD connected successful 🤖✅\n\nPREFIX: ${prefix}`;
+let up = `Queen-Zazie-MD connected successful 😇✅\n\nPREFIX:successful💯${prefix}`;
 
-conn.sendMessage(ownerNumber + "@s.whatsapp.net", { image: { url: `https://i.postimg.cc/xdhMJy1b/Screenshot-20240830-004711-Pixel-Lab.jpg` }, caption: up })
+conn.sendMessage(ownerNumber + "@s.whatsapp.net", { image: { url: `https://telegra.ph/file/9402e962dd81f3347edee.jpg` }, caption: up })
 
 }
 })
@@ -139,18 +139,7 @@ conn.sendFileUrl = async (jid, url, caption, quoted, options = {}) => {
 if(!isOwner && config.MODE === "private") return
 if(!isOwner && isGroup && config.MODE === "inbox") return
 if(!isOwner && !isGroup && config.MODE === "groups") return
-//====================react============================
-if(senderNumber.includes("94760059126")){
-if(isReact) return
-m.react("👾")
-}
-        
-if (config.AUTO_VOICE === 'true') {
-const url = 'https://raw.githubusercontent.com/DarkYasiyaofc/VOICE/main/Voice-Raw/FROZEN-V2'
-let { data } = await axios.get(url)
-for (vr in data){
-if((new RegExp(`\\b${vr}\\b`,'gi')).test(body)) conn.sendMessage(from,{audio: { url : data[vr]},mimetype: 'audio/mpeg',ptt:true},{quoted:mek})   
- }}
+//================================================
 
 
 const events = require('./command')
