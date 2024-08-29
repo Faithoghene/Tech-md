@@ -16,10 +16,9 @@ let status =`┌────────────────────
     *├ ⏳Uptime:-  ${runtime(process.uptime())}*    
     *├ 📟Ram usage:- ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB*
     *├ ⚙️HostName:- ${os.hostname()}*
-    *├ 👨‍💻Owner :- Sahas Tech*   
-    *├ 🤖version: 1.5.0*
+    *├ 👨‍💻Owner :- Nethsara & Supun*   
+    *├ 🤖version: 1.1.0*
     └───────────────────────
-    *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ꜱᴀʜᴀꜱ ᴛᴇᴄʜ*
 `
 return reply(`${status}`)
 }catch(e){
